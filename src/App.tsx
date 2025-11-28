@@ -1,6 +1,5 @@
 import { useState, useRef } from "react";
 import TimerLib from "easytimer.js";
-import "./App.css";
 import Button from "./lib/components/button";
 import Timer from "./lib/components/timer";
 
