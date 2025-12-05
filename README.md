@@ -1,75 +1,146 @@
-# React + TypeScript + Vite
+# 📘 ABP Pomodoro — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web de Pomodoro desenvolvida em **React + TypeScript** utilizando **Vite** como ferramenta de build.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias Utilizadas
 
-## React Compiler
+### **Interface**
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+* **React 19**
+* **TypeScript**
+* **Vite**
+* **TailwindCSS**
 
-Note: This will impact Vite dev & build performances.
+### **Ferramentas**
 
-## Expanding the ESLint configuration
+* **ESLint** (padronização de código)
+* **npm** para scripts e gerenciamento de dependências
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+## 📂 Estrutura do Projeto
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+```bash
+abp-pomodoro-frontend/
+├── public/                  # Arquivos estáticos
+├── src/
+│   ├── lib
+│   │    └── components/     # Componentes reutilizáveis
+│   ├── main.tsx             # Entry point
+|   └── App.tsx              # Começo da interface
+├── vite.config.ts           # Configuração do Vite
+├── package.json             # Configuração do projeto (deps)
+└── README.md                # Este mesmo arquivo!
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+## 📥 Pré-requisitos
 
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+* **Node.js 22+**
+* **npm**
+
+Confirme sua versão:
+
+```bash
+node -v
+npm -v
 ```
+
+---
+
+## 🛠️ Instalação
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+---
+
+## 🧪 Ambiente de Desenvolvimento
+
+Para rodar a aplicação em modo de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+Em seguida, abra a URL indicada pelo Vite, por padrão:
+
+➡️ [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🏗️ Build de Produção
+
+Gere o bundle otimizado:
+
+```bash
+npm run build
+```
+
+Os arquivos finais ficarão em:
+
+```bash
+dist/
+```
+
+---
+
+## 🔍 Pré-visualizar o Build
+
+Para testar o build localmente:
+
+```bash
+npm run preview
+```
+
+Isso inicia um servidor local servindo o conteúdo da pasta `dist/`.
+
+---
+
+## 🧹 Lint
+
+Para executar a análise de código:
+
+```bash
+npm run lint
+```
+
+O ESLint aplicará as regras configuradas no projeto.
+
+---
+
+## 🧾 Funcionalidades da Aplicação
+
+* ⏱️ Timer com modos:
+
+  * Pomodoro
+  * Pausa curta
+  * Pausa longa
+* ▶️ Controles:
+
+  * Iniciar
+  * Pausar
+  * Resetar
+* 📝 Lista de tarefas integrada
+
+  * Criar tarefas
+  * Concluir tarefas
+  * Deletar tarefas
+* 🌗 Interface moderna com TailwindCSS
+* ♻️ Armazenamento local
+
+---
+
+## 🧑‍🏫 Sobre o Projeto
+
+Este repositório faz parte do **projeto final da disciplina de Frontend (2025.2)** do curso de **Engenharia de Software**. O objetivo é aplicar boas práticas modernas de desenvolvimento web, incluindo:
+
+* componentização
+* uso de hooks
+* gerenciamento de estado
