@@ -22,7 +22,7 @@ const TimerContainer: React.FC = () => {
 
       timerRef.current.addEventListener("secondsUpdated", () => {
         setTime(
-          timerRef.current.getTimeValues().toString(["minutes", "seconds"])
+          timerRef.current.getTimeValues().toString(["minutes", "seconds"]),
         );
       });
 
@@ -43,7 +43,7 @@ const TimerContainer: React.FC = () => {
 
   return (
     <div
-      className="flex flex-col items-start gap-8 h-full flex-1 p-12 max-md:p-6 max-md:items-center justify-evenly max-md:fixed max-md:h-[80%] max-md:w-full max-md:pb-12 bg-center bg-cover bg-no-repeat relative"
+      className="flex flex-col items-start gap-8 h-full flex-1 p-12 max-md:p-8 max-md:items-center justify-evenly max-md:fixed max-md:h-[80%] max-md:w-full max-md:pb-12 bg-center bg-cover bg-no-repeat relative"
       style={{
         backgroundImage:
           "linear-gradient(rgba(158, 226, 0, 0.5), rgba(158, 226, 0, 0.5)), url('/forest.webp')",

@@ -24,9 +24,13 @@ const Button: React.FC<Props> = ({
     `.trim();
 
   return (
-      <button onClick={disabled ? undefined : onClick} className={buttonClasses} disabled={disabled}>
-        {label}
-      </button>
+    <button
+      onClick={disabled ? undefined : onClick}
+      className={buttonClasses}
+      disabled={disabled}
+    >
+      {label}
+    </button>
   );
 };
 
