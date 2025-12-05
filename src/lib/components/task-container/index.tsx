@@ -46,7 +46,7 @@ const TaskContainer: React.FC = () => {
         : tasks;
 
     return (
-        <div className="flex flex-col bg-white flex-1 p-6 md:p-12 md:relative max-md:absolute max-md:top-[80%] max-md:left-0 max-md:right-0 max-md:rounded-t-2xl max-md:z-99 max-md:min-h-screen max-md:pb-0 -translate-y-6">
+        <div className="flex flex-col bg-white flex-1 p-6 md:p-12 md:relative max-md:absolute max-md:top-[80%] max-md:left-0 max-md:right-0 max-md:rounded-t-2xl max-md:z-99 max-md:min-h-screen max-md:pb-0 max-md:-translate-y-6">
             <TaskHeader 
                 hideCompleted={hideCompleted}
                 onToggleHide={() => setHideCompleted(!hideCompleted)}

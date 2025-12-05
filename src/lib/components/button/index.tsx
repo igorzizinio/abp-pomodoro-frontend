@@ -16,8 +16,8 @@ const Button: React.FC<Props> = ({
   onClick,
 }) => {
   const buttonClasses = `
-        py-2 px-4 rounded text-white text-center text-nowrap font-semibold transition-all
-        ${isLink ? "btn-link" : ""}
+        rounded text-white text-center text-nowrap transition-all
+        ${isLink ? "text-lg py-2 px-4 font-semibold" : ""}
         ${isLarge ? "text-4xl px-6 py-4" : ""}
         ${isActive ? "bg-black text-white font-bold" : ""}
         ${disabled ? "opacity-50 cursor-not-allowed" : "hover:cursor-pointer hover:bg-black/80 hover:text-white"}
