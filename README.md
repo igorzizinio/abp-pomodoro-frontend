@@ -2,8 +2,6 @@
 
 Aplicação web de Pomodoro desenvolvida em **React + TypeScript** utilizando **Vite** como ferramenta de build.
 
----
-
 ## 🚀 Tecnologias Utilizadas
 
 ### **Interface**
@@ -17,8 +15,6 @@ Aplicação web de Pomodoro desenvolvida em **React + TypeScript** utilizando **
 
 * **ESLint** (padronização de código)
 * **npm** para scripts e gerenciamento de dependências
-
----
 
 ## 📂 Estrutura do Projeto
 
@@ -34,8 +30,6 @@ abp-pomodoro-frontend/
 ├── package.json             # Configuração do projeto (deps)
 └── README.md                # Este mesmo arquivo!
 ```
-
----
 
 ## 📥 Pré-requisitos
 
@@ -73,8 +67,6 @@ Em seguida, abra a URL indicada pelo Vite, por padrão:
 
 ➡️ [http://localhost:5173](http://localhost:5173)
 
----
-
 ## 🏗️ Build de Produção
 
 Gere o bundle otimizado:
@@ -88,8 +80,6 @@ Os arquivos finais ficarão em:
 ```bash
 dist/
 ```
-
----
 
 ## 🔍 Pré-visualizar o Build
 
@@ -113,8 +103,6 @@ npm run lint
 
 O ESLint aplicará as regras configuradas no projeto.
 
----
-
 ## 🧾 Funcionalidades da Aplicação
 
 * ⏱️ Timer com modos:
@@ -135,8 +123,6 @@ O ESLint aplicará as regras configuradas no projeto.
 * 🌗 Interface moderna com TailwindCSS
 * ♻️ Armazenamento local
 
----
-
 ## 🧑‍🏫 Sobre o Projeto
 
 Este repositório faz parte do **projeto final da disciplina de Frontend (2025.2)** do curso de **Engenharia de Software**. O objetivo é aplicar boas práticas modernas de desenvolvimento web, incluindo:
@@ -144,3 +130,5 @@ Este repositório faz parte do **projeto final da disciplina de Frontend (2025.2
 * componentização
 * uso de hooks
 * gerenciamento de estado
+
+🫂 **Alunos:** Guilherme Domingos, Igor S. Zizinio.
