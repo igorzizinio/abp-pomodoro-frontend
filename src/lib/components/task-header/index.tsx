@@ -10,9 +10,10 @@ const TaskHeader: React.FC<Props> = ({ hideCompleted, onToggleHide }) => {
     <div className="flex flex-row gap-8 justify-between mb-8 shrink-0">
       <h1 className="text-4xl font-bold">Tarefas</h1>
       <Button
-        label="Ocultar finalizadas"
-        isActive={hideCompleted}
+        label={hideCompleted ? "Exibir finalizadas" : "Ocultar finalizadas"}
+        isActive
         onClick={onToggleHide}
+        isLink
       />
     </div>
   );

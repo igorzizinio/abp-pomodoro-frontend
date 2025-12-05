@@ -9,7 +9,7 @@ const TaskInput: React.FC<Props> = ({ value, onChange, onAdd }) => {
     <div className="flex flex-col shrink-0 gap-2 pt-4 max-md:mb-8">
       <div className="flex flex-row items-center gap-2">
         <div className="flex-1 h-0.5 bg-zinc-400" />
-        <span className="font-semibold text-sm whitespace-nowrap text-zinc-500">
+        <span className="text-sm whitespace-nowrap text-zinc-500 dark:text-zinc-300">
           Adicionar nova tarefa
         </span>
         <div className="flex-1 h-0.5 bg-zinc-400" />
@@ -20,7 +20,7 @@ const TaskInput: React.FC<Props> = ({ value, onChange, onAdd }) => {
         value={value}
         onChange={(e) => onChange(e.target.value)}
         onKeyDown={(e) => e.key === "Enter" && onAdd()}
-        className="flex flex-row gap-2 border border-zinc-400 rounded p-4 text-zinc-500"
+        className="flex flex-row gap-2 border border-zinc-400 rounded p-4 text-zinc-500 dark:text-zinc-300"
       />
       <button
         onClick={onAdd}

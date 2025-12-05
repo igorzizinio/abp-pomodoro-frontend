@@ -49,7 +49,7 @@ const TimerContainer: React.FC = () => {
       className="flex flex-col items-start gap-8 h-full flex-1 p-12 max-md:p-8 max-md:items-center justify-evenly max-md:fixed max-md:h-[80%] max-md:w-full max-md:pb-12 bg-center bg-cover bg-no-repeat relative"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(158, 226, 0, 0.5), rgba(158, 226, 0, 0.5)), url('/forest.webp')",
+          "linear-gradient(var(--bg-timer), var(--bg-timer)), url('/forest.webp')",
       }}
     >
       <div className="flex flex-col gap-8 max-md:items-center flex-wrap">
