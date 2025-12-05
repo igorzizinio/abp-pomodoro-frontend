@@ -7,7 +7,9 @@ import TimerActions from "../timer-actions";
 
 const TimerContainer: React.FC = () => {
   const [time, setTime] = useState("25:00");
-  const [cycle, setCycle] = useState("pomodoro");
+  const [cycle, setCycle] = useState<"pomodoro" | "curta" | "longa">(
+    "pomodoro"
+  );
   const [isRunning, setIsRunning] = useState(false);
 
   const timerRef = useRef(new EasyTimer());
@@ -37,6 +39,7 @@ const TimerContainer: React.FC = () => {
 
   const stopTimer = () => {
     timerRef.current.stop();
+    setCycle("pomodoro");
     setTime("25:00");
     setIsRunning(false);
   };

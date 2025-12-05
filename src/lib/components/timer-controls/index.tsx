@@ -3,7 +3,7 @@ import Button from "../button";
 interface Props {
   cycle: string;
   isRunning: boolean;
-  onCycleChange: (cycle: string, time: string) => void;
+  onCycleChange: (cycle: "pomodoro" | "curta" | "longa", time: string) => void;
 }
 
 const TimerControls: React.FC<Props> = ({

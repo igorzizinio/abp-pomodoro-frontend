@@ -15,10 +15,10 @@ const TimerActions: React.FC<Props> = ({
 }) => {
   return (
     <div className="flex flex-row gap-6 items-center">
-      {!isRunning ? (
-        <Button onClick={onStart} label="Iniciar" isLink isLarge isActive />
-      ) : (
+      {isRunning ? (
         <Button onClick={onPause} label="Parar" isLink isLarge isActive />
+      ) : (
+        <Button onClick={onStart} label="Iniciar" isLink isLarge isActive />
       )}
       <Button onClick={onStop} label="Finalizar" isLink />
     </div>
