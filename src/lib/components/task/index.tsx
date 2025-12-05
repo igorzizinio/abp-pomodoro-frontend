@@ -1,17 +1,23 @@
 interface Props {
+  id: number;
   text: string;
   done: boolean;
   onCheck?: () => void;
 }
 
-const Task: React.FC<Props> = ({ text, done, onCheck }) => {
-  const id = `task-${text.replace(/\s+/g, "-").toLowerCase()}`;
+const Task: React.FC<Props> = ({ id, text, done, onCheck }) => {
+  const checkboxId = `task-${id}`;
 
   return (
     <div className="flex flex-row gap-2 border border-zinc-400 rounded p-4">
-      <input type="checkbox" id={id} checked={done} onChange={onCheck} />
+      <input
+        type="checkbox"
+        id={checkboxId}
+        checked={done}
+        onChange={onCheck}
+      />
       <label
-        htmlFor={id}
+        htmlFor={checkboxId}
         className={done ? "line-through cursor-pointer" : "cursor-pointer"}
       >
         {text}

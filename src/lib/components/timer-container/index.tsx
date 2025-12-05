@@ -22,7 +22,7 @@ const TimerContainer: React.FC = () => {
 
       timerRef.current.addEventListener("secondsUpdated", () => {
         setTime(
-          timerRef.current.getTimeValues().toString(["minutes", "seconds"]),
+          timerRef.current.getTimeValues().toString(["minutes", "seconds"])
         );
       });
 

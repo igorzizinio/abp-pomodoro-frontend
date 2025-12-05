@@ -17,6 +17,7 @@ const TaskList: React.FC<Props> = ({ tasks, onToggle }) => {
       {tasks.map((task) => (
         <Task
           key={task.id}
+          id={task.id}
           text={task.text}
           done={task.done}
           onCheck={() => onToggle(task.id)}
